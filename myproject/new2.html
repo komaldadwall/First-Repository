@@ -1,0 +1,48 @@
+<html><head>
+<script>
+       function fun1(){
+	   var address= documemt.getElementByName("p1");
+	   var text = address.innerHTML;
+	   alert(text);
+	   }
+	   function fun2(){
+	   var address = documemt.getElementByClassName("p2");
+	   address[0] = style.color("red");
+	   }
+	   
+	  function hide(){
+	   documemt.getElementById("div1").style.visibility="hidden";
+	  }
+	  function show(){
+	  
+	  var addr= documemt.getElementById("div1");
+	  addr.style.visibility = "visible";
+	  addr.style.
+	  }
+	  
+	function details(){
+	    var name = {"DEV","Riya"};
+		arr = documemt.getElementByName(name);
+		alert(arr);
+	  }
+</script>
+<style>
+#div1{
+  height: 50px;
+  width : 50px;
+  background-color : "red";
+}
+</style>
+<head>
+<body>
+<p id ="p1"> "Welcome to JS"</p>
+<p class  = "p2"> "Welcome to javascript"</p>
+<p class = "p2">  "Welcome to javascript"</p>
+<div id = "div1">  </div>
+<button onClick =" fun1()">Fun1</button>
+<button onClick = "fun2()">Fun2</button>
+<button onClick = "hide()"> Hide</button>
+<button onClick = "show()">Show </button>
+<button onClick = "details()">Get Details</button>
+</body>
+</html>
